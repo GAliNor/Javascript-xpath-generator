@@ -1,3 +1,9 @@
+
+/**
+ * 
+ * @param { HTMLElement } domElement - DOM element for xpath generation
+ * @returns { string } - xpath value
+ */
 export const generateXPath = (domElement) => {
     if(domElement.id.length) {
         return `//*[@id='${domElement.id}']`;
@@ -7,7 +13,6 @@ export const generateXPath = (domElement) => {
         const nodesInSameLevel = Array.from(domElement.parentNode.childNodes);
         const nodesInSameLevelWithSameTagName = nodesInSameLevel.filter(element => element.tagName === domElement.tagName);
         const domElementLevelPosition = nodesInSameLevelWithSameTagName.indexOf(domElement);
-        console.log(domElementLevelPosition);
         return `${generateXPath(domElement.parentNode)}/${domElement.tagName.toLowerCase()}${domElementLevelPosition ? `[${domElementLevelPosition + 1}]` : ''}`;
     }
 }
