@@ -1,12 +1,6 @@
 # XPATH function generator
 
 xpath generator is a simple function that helps you generate the xpath of a given html element.
-
-
-# XPATH function generator
-
-xpath generator is a simple function that helps you generate the xpath of a given html element.
-
   
 
 # Table of contents
