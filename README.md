@@ -44,7 +44,8 @@ In case the "absolute" parameter is set to true, then the function will return t
 Using the generateXPath function add an click event to the document and display the data :
 
     const  displayXPathValue = (e) => {
-	    console.log(generateXPath(e.target));
+	    console.log('relative xpath', generateXPath(e.target));
+      console.log('absolute xpath', generateXPath(e.target, true));
     };
    
     document.addEventListener('click', displayXPathValue);
