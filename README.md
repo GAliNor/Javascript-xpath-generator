@@ -36,7 +36,8 @@ For each element it will:
 * Else, it will determine its position inside its wrapper and then recursively process its parent node.
 
   
-  
+In case the "absolute" parameter is set to true, then the function will return the full xpath starting from the root element to the tag name of the selected element.
+
 
 # Usage example
 
@@ -79,3 +80,6 @@ Many thanks to :
  - @karimerrahli
 
 for the reviews and advices
+
+Several months ago I got inspired by a code snippet posted by a developer that I couldn't find again.
+Special thanks to him, if I find you my friend it would be my pleasure to give the credits you deserve.
