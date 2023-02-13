@@ -45,7 +45,7 @@ Using the generateXPath function add an click event to the document and display 
 
     const  displayXPathValue = (e) => {
 	    console.log('relative xpath', generateXPath(e.target));
-      	    console.log('absolute xpath', generateXPath(e.target, true));
+      console.log('absolute xpath', generateXPath(e.target, true));
     };
    
     document.addEventListener('click', displayXPathValue);
