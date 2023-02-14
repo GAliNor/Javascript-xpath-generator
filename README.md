@@ -41,7 +41,7 @@ In case the "absolute" parameter is set to true, then the function will return t
 
 # Usage example
 
-Using the generateXPath function add an click event to the document and display the data :
+Using the generateXPath function add a click event to the document and display the data :
 
     const  displayXPathValue = (e) => {
 	    console.log('relative xpath', generateXPath(e.target));
@@ -76,9 +76,9 @@ Use the browser console in the page from where you retrieved the xPath and  then
 
 Many thanks to :
 
- - @abiari
- - @hmellahi
- - @karimerrahli
+ - [@abiari](https://github.com/abiari)
+ - [@hmellahi](https://github.com/hmellahi)
+ - [@karimerrahli](https://github.com/karimerrahli)
 
 for the reviews and advices
 
